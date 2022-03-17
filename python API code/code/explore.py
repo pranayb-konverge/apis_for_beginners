@@ -1,6 +1,6 @@
 from twilio.rest import Client
 
-client = Client("AC1ab13a200bd2868847b088655309c747", "6035694070272c018b9c03a57e37b9c5")
+client = Client("TWILIO_SID", "TWILIO_TOKEN")
 
 for message in client.messages.list():
     print(message.body)
